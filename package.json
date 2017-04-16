@@ -1,0 +1,16 @@
+{
+    "name": "mqtt-relay",
+    "version": "0.0.1",
+    "description": "MQTT Relay",
+    "license": "MIT",
+    "main": "mqtt-relay.js",
+    "scripts": {
+        "start": "node mqtt-relay.js"
+    },
+    "dependencies": {
+        "mqtt": "^2.6.2"
+    },
+    "engines": {
+        "node": ">=4"
+    }
+}
