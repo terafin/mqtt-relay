@@ -4,6 +4,9 @@
     "description": "MQTT Relay",
     "license": "MIT",
     "main": "mqtt-relay.js",
+    "repository": {
+        "url": "https://github.com/terafin/mqtt-relay"
+    },
     "scripts": {
         "start": "node mqtt-relay.js"
     },
