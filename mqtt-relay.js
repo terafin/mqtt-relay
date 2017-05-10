@@ -1,16 +1,14 @@
 // Requirements
-mqtt = require('mqtt')
-logging = require('./homeautomation-js-lib/logging.js')
-
-logging.set_enabled(false)
+const mqtt = require('mqtt')
+const logging = require('./homeautomation-js-lib/logging.js')
 
 // Config
-src_host = process.env.MQTT_SRC_HOST
-dst_host = process.env.MQTT_DST_HOST
-topic = process.env.MQTT_TOPIC
+const src_host = process.env.MQTT_SRC_HOST
+const dst_host = process.env.MQTT_DST_HOST
+const topic = process.env.MQTT_TOPIC
 
-src_client = mqtt.connect(src_host)
-dst_client = mqtt.connect(dst_host)
+const src_client = mqtt.connect(src_host)
+const dst_client = mqtt.connect(dst_host)
 
 
 // MQTT
@@ -27,12 +25,12 @@ dst_client.on('connect', () => {
 
 dst_client.on('disconnect', () => {
     logging.log('Reconnecting...\n')
-    dst_client.connect(host)
+    dst_client.connect(dst_client)
 })
 
 src_client.on('disconnect', () => {
     logging.log('Reconnecting...\n')
-    src_client.connect(host)
+    src_client.connect(src_client)
 })
 
 src_client.on('message', (topic, message) => {
