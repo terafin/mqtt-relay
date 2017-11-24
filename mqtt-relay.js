@@ -1,6 +1,6 @@
 // Requirements
 const mqtt = require('mqtt')
-const logging = require('./homeautomation-js-lib/logging.js')
+const logging = require('homeautomation-js-lib/logging.js')
 
 // Config
 const src_host = process.env.MQTT_SRC_HOST

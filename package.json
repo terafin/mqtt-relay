@@ -11,6 +11,7 @@
         "start": "node mqtt-relay.js"
     },
     "dependencies": {
+        "homeautomation-js-lib": "git://github.com/terafin/homeautomation-js-lib.git",
         "mqtt": "^2.6.2"
     },
     "engines": {
