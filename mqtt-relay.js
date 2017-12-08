@@ -13,23 +13,23 @@ const dst_client = mqtt.connect(dst_host)
 
 // MQTT
 src_client.on('connect', () => {
-    logging.log('Source client connected, now subscribing')
+    logging.info('Source client connected, now subscribing')
     src_client.subscribe(topic)
-    logging.log('Listening...\n')
+    logging.info('Listening...\n')
 })
 
 dst_client.on('connect', () => {
-    logging.log('Destination client connected, now subscribing')
-    logging.log('Listening...\n')
+    logging.info('Destination client connected, now subscribing')
+    logging.info('Listening...\n')
 })
 
 dst_client.on('disconnect', () => {
-    logging.log('Reconnecting...\n')
+    logging.info('Reconnecting...\n')
     dst_client.connect(dst_client)
 })
 
 src_client.on('disconnect', () => {
-    logging.log('Reconnecting...\n')
+    logging.info('Reconnecting...\n')
     src_client.connect(src_client)
 })
 
