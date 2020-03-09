@@ -1,20 +1,20 @@
 {
-    "name": "mqtt-relay",
-    "version": "0.0.1",
-    "description": "MQTT Relay",
-    "license": "MIT",
-    "main": "mqtt-relay.js",
-    "repository": {
-        "url": "https://github.com/terafin/mqtt-relay"
-    },
-    "scripts": {
-        "start": "node mqtt-relay.js"
-    },
-    "dependencies": {
-        "homeautomation-js-lib": "https://github.com/terafin/homeautomation-js-lib.git",
-        "mqtt": "^2.18.8"
-    },
-    "engines": {
-        "node": ">=4"
-    }
+  "name": "mqtt-relay",
+  "version": "0.0.1",
+  "description": "MQTT Relay",
+  "license": "MIT",
+  "main": "mqtt-relay.js",
+  "repository": {
+    "url": "https://github.com/terafin/mqtt-relay"
+  },
+  "scripts": {
+    "start": "node mqtt-relay.js"
+  },
+  "dependencies": {
+    "homeautomation-js-lib": "https://github.com/terafin/homeautomation-js-lib.git",
+    "mqtt": "^2.18.8"
+  },
+  "engines": {
+    "node": ">=4"
+  }
 }
