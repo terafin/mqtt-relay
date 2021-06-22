@@ -12,7 +12,7 @@
     },
     "dependencies": {
         "homeautomation-js-lib": "https://github.com/terafin/homeautomation-js-lib.git",
-        "mqtt": "^4.2.6"
+        "mqtt": "^4.2.8"
     },
     "engines": {
         "node": ">=4"
